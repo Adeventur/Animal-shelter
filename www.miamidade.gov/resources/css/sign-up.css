@@ -1,0 +1,83 @@
+.sign-up {
+  background: #43a047;
+  padding: 3em;
+  color: #fff;
+
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+}
+
+.sign-up__title {
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(2.5rem, 6.5vw, 6.5rem);
+  letter-spacing: 5px;
+  line-height: 1;
+}
+
+.sign-up__item label {
+  color: #fff;
+}
+
+.sign-up__item form input {
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  background-color: #fff !important;
+  color: #000;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
+.sign-up__item form input:focus {
+  border-bottom: 1px solid rgba(255,255,255,1) !important;
+  box-shadow: 0 1px 0 0 rgba(255,255,255,1) !important;
+
+  outline: 3px dotted #fff !important;
+}
+
+.sign-up__item form .submit {
+  color: #000;
+  height: auto;
+  line-height: 1.5;
+  padding: 0.5em 1.5em;
+}
+
+/*--Right--*/
+
+.right-content .sign-up__title {
+  font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.right-content .sign-up__title::after {
+  content: none;
+}
+
+@media (min-width:991px) {
+
+
+  .sign-up {
+    flex-direction: row;
+  }
+
+  .sign-up__item {
+    flex: 1 0;
+  }
+
+  .sign-up__item:first-child {
+    align-self: center;
+  }
+
+  /*--Right--*/
+  .right-content .sign-up {
+    flex-direction: column;
+  }
+
+  .right-content .sign-up__item:first-child {
+    align-self: auto;
+  }
+
+
+}

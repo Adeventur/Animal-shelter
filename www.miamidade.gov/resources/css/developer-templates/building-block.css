@@ -1,0 +1,61 @@
+.building {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.building__item {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  border-radius: 3px;
+}
+
+.building__item a:is(:hover, :focus) {
+  text-decoration: none;
+}
+
+.building__image-container {
+  max-height: 255px;
+  overflow: hidden;
+
+  transition: all 0.2s ease-out;
+  background-color: hsla(210deg 56% 37% / 0);
+
+  display: grid;
+  place-items: center;
+}
+
+.building__item a:where(:hover, :focus) .building__image-container {
+  background-color: hsla(210deg 56% 37% / .8);
+}
+
+.building__item a:where(:hover, :focus) .building__code {
+  color: hsla(0deg 0% 100% / 1);
+}
+
+.building__image,
+.building__code {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.building__image {
+  object-fit: cover;
+  z-index: -1;
+}
+
+.building__code {
+  transition-duration: 0.2s;
+  color: hsla(0deg 0% 100% / 0);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.building__title {
+  margin: 0.5rem 1.5rem;
+  font-size: 1.4rem;
+}
+
+.building__title:where(:hover, :focus) {
+  text-decoration: underline;
+}

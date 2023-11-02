@@ -1,0 +1,120 @@
+
+.floating-bar {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.82);
+  font-size: 13px;
+}
+
+.floating-bar__table,
+.floating-bar__left-container__table {
+  display: table;
+  width: 100%;
+}
+
+.floating-bar__table-column,
+.floating-bar__left-container__table-column {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.floating-bar__left-container__table-column {
+  margin-right: 30px;
+}
+
+.floating-bar__left-container__table-column:last-child {
+  margin-right: 0;
+}
+
+.floating-bar__table-column:first-child {
+  width: 80%;
+}
+
+.floating-bar__table-column:last-child {
+  width: 19.5%;
+}
+
+.floating-bar__social-media {
+  display: inline-block;
+}
+
+.floating-bar__social-media li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.social-media-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #03a9f4;
+  display: inline-block;
+  color: #fff;
+  margin-right: 10px;
+
+}
+
+.social-media-circle--facebook {
+  background-color: #3b5a9a;
+}
+
+.social-media-circle--twitter {
+  background-color: #000000;
+}
+
+.social-media-circle--instagram {
+  background-color: #547fa1;
+}
+
+.social-media-circle--youtube {
+  background-color: #ff3332;
+}
+
+.social-media-circle .fa {
+  line-height: 37px;
+  width: 100%;
+  text-align: center;
+}
+
+.floating-bar__x-icon {
+  width: 32%;
+  margin: auto;
+  margin-top:12px;
+  line-height: 0px;
+}
+
+.floating-bar__right-container span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.floating-bar__right-container i {
+  vertical-align: bottom;
+  margin-left: 10px;
+}
+
+
+@media (max-width: 1300px) {
+  .floating-bar {
+    display: none !important;
+  }
+  .social-media-circle i {
+    line-height: 27px;
+    }
+    .footer-social-icons a {
+    width: 25px!important;
+    height: 25px!important;
+  }
+}
+@media (min-width: 1300px) {
+  .footer-connect .footer-social-icons {
+     display: none !important;
+  }
+
+  
+}

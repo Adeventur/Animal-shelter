@@ -1,0 +1,308 @@
+a .general-item__title:hover,
+a .general-item__title:focus {
+  text-decoration: underline;
+}
+
+.general-item-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -2.5em;
+}
+
+.general-item__individual {
+  width: 33.3%;
+  margin-bottom: 1.5rem;
+  display: flex;
+  padding-left: 2.5em;
+  justify-content: space-between;
+}
+
+.general__no-section-button .general-item__individual:nth-last-child(-n+3),
+.general-item__description p:last-of-type{
+  margin-bottom: 0;
+}
+
+.general-item__individual--column {
+  flex-direction: column;
+}
+
+.general-item__description {
+  margin-top: 0.5em;
+}
+
+.general-item__individual--column .general-item__title {
+  margin-top: 0;
+}
+
+.right-content .general-item__individual {
+  width: 100%;
+
+}
+
+.general-item__media {
+  min-height: 1px; /*---Fix a bug for IE11---*/
+}
+
+
+.general-item__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.general-item__individual--center.general-item__individual--icon {
+	text-align: center;
+}
+
+.general-item__individual--center.general-item__individual--icon .general-item__fontawesome {
+    font-size: 1.5rem;
+  }
+
+.general-item__individual--icon .general-item__media {
+	display:flex;
+  justify-content: center;
+}
+
+.general-item__title {
+  font-size: 1.4rem;
+}
+
+.general-item-row a p,
+.general-item__sub {
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.general-item__sub--bold {
+  font-weight: bold;
+}
+
+.general-item-row > a:hover,
+.general-item-row > a:link,
+.general-item-row > a:visited { 
+	text-decoration: none!important;
+}
+
+.general-item-row > a:hover .general-item__title:hover {
+	text-decoration: underline;
+}
+
+.general-item__button {
+  height: auto;
+  line-height: 1.5;
+  margin-top: 1.5em;
+  padding: 0.5rem 2rem;
+}
+
+.general-item__button--100 {
+  width: 100%;
+}
+
+
+
+
+.general-circle img {
+  max-width: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  aspect-ratio: 1 / 1;
+  border: 5px #e7e7e7 solid;
+ }
+
+  .general-circle .general-item__content {
+  text-align:center;
+  }
+
+  .general-circle .general-item__text {
+    margin-top: 5px;
+    line-height: 26px;
+  }
+
+.twitter-feed--full-width {
+ width: 100%;
+ margin-left: 0;
+    }
+
+span.general-item__title {
+font-weight: bold;
+}
+
+
+
+.row .col.content__general__right {
+  padding: 0;
+}
+
+.rss-link {
+  font-size: 1rem;
+  color: #a56a00;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+  .svg-white {
+   filter:invert(93%) sepia(100%) saturate(0%) hue-rotate(138deg) brightness(104%) contrast(102%);
+ }
+
+/*----MEDIA----*/
+.general-item__icon-bg {
+	width: 40px; height: 40px;
+  background-color: #295d92;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.general-item__img--left {
+  margin: 0 1rem 0 0;
+}
+
+.general-item__icon-bg img,
+.general-item__fontawesome {
+  overflow: initial;
+  max-width: 60%;
+  margin: auto;
+}
+
+.general-item__icon-bg--big {
+  width: 80px; height: 80px;
+  max-width: 70%;
+}
+
+/*----/MEDIA----*/
+
+@media (min-width:901px) {
+  .general-item-row--four .general-item__individual {
+    width: 25%;
+  }
+
+ .general-item__individual--left.general-item__individual--icon .general-item__media,
+ .general-item__individual--left.general-item__individual--fa .general-item__media{
+    justify-content: flex-start
+ }
+
+  .general-item__individual--left.general-item__individual--icon .general-item__content,
+  .general-item__individual--left.general-item__individual--fa .general-item__content{
+    margin-left: 25px;
+    width: 100%;
+ }
+
+ .general-item__individual--left > div:first-child {
+    display: flex;
+ }
+
+ .general-item__individual--left .general-item__title {
+    display: inline-block;
+ }
+
+ .general-item__individual--left.general-item__individual--icon .general-item__description {
+ }
+
+ .general-item__description {
+  flex-grow: 1;
+ }
+	
+}
+
+
+
+@media (min-width: 601px) {
+
+  .general-item-row--one .general-item__individual {
+    width: 100%;
+   }
+
+  .general-item-row--two .general-item__individual {
+    width: 50%;
+   }
+
+   .general-item__individual--left.general-item__individual--img .general-item__media,
+   .general-item__individual--left.general-item__individual--img .general-item__content {
+    width: 50%;
+   }
+
+   .general-item-row--one .general-item__individual--left.general-item__individual--img .general-item__media {
+      width: 20%;
+   }
+
+   .general-item-row--one .general-item__individual--left.general-item__individual--img .general-item__content {
+      width: 80%;
+   }
+
+    .row .col.content__general__left {
+      width: 64%;
+    }
+
+    .row .col.content__general__right {
+      padding: 0;
+      width: 34%;
+      margin-left: 1%;
+    }
+
+
+}
+
+
+@media (max-width: 900px) {
+  .general-item__individual.general-item__individual--icon,
+  .general-item__individual.general-item__individual--fa {
+    width: 50%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .general-item__individual.general-item__individual--icon .general-item__fontawesome {
+    font-size: 1.5rem;
+  }
+
+  .general-item__individual.general-item__individual--icon .general-item__icon-bg,
+  .general-item__individual.general-item__individual--fa .general-item__icon-bg {
+    width: 80px; height: 80px;
+    max-width: 70%;
+  }
+
+  .general-item__individual.general-item__individual--icon .general-item__description,
+  .general-item__individual.general-item__individual--fa .general-item__description {
+    display: none;
+  }
+}
+
+
+@media (max-width: 900px) and (min-width: 601px) {
+  .general-item__individual {
+    width: 50%;
+  }
+
+
+  .right-content .general-item__individual {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+  
+  .general-item-row--mobile-100 .general-item__individual {
+    width: 100%;
+  }
+  /*-- mobile-50 class gets added in the component when one of the images has an exentsion as svg or if a font awesome icon is used--*/
+  .general-item-row--mobile-50 .general-item__individual {
+    width: 50%;
+  }
+
+  .general-item__individual--left {
+    flex-direction: column;
+  }
+
+  .right-content .general-item__individual.general-item__individual--icon,
+  .right-content .general-item__individual.general-item__individual--fa {
+    width: 100%;
+  }
+
+
+}

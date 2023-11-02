@@ -1,0 +1,141 @@
+/* --------------------------
+BANNER FULL WIDTH GRADIENT
+-------------------------- */
+section.banner-full-width-gradient.spacing { 
+  padding: 65px 0 95px 0;
+}
+
+
+.banner-full-width-gradient {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0 145px 0;
+  /*--padding: 50px 0 75px 0;----- makes the banners way too small*/ 
+  background-size: cover;
+  clip-path: polygon(0 19%, 59% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.banner-full-width-gradient p {
+	font-size: 1.3em;
+}
+
+.banner-full-width-gradient h2 {
+	font-size: 2.5em;
+	margin-top: 140px;
+	font-family: 'Bebas Neue',cursive;
+    padding: 0;
+    margin: 0;
+    font-size: 4vw;
+    font-weight: normal;
+    line-height:2.2;
+    color: #fff;
+	padding-top: 60px;
+}
+
+
+.banner-full-width-gradient .content {
+  color: #fff;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+}
+
+.banner-full-width-gradient .img-tint-gradient,
+.img-tint-gradient {
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	opacity:0.95;
+	z-index: 1;
+}
+
+.custom-color--county-blue{
+	background: radial-gradient(circle, rgba(2,122,187,0.7567401960784313) 0%, rgba(2,122,187,1) 100%);
+}
+
+.custom-color--county-green{
+	background: rgb(81,131,58);
+    background: radial-gradient(circle, rgba(81,131,58,0.7903536414565826) 0%, rgba(81,131,58,1) 100%);
+}
+
+.custom-color--teal{
+background: rgb(0,133,119);
+background: radial-gradient(circle, rgba(0,133,119,0.76234243697479) 0%, rgba(0,133,119,1) 100%);
+}
+
+.custom-color--pink{
+background: rgb(227,22,91);
+background: radial-gradient(circle, rgba(227,22,91,0.7231267507002801) 0%, rgba(227,22,91,1) 100%);
+}
+
+.custom-color--purple{
+background: rgb(156,39,176);
+background: radial-gradient(circle, rgba(156,39,176,1) 0%, rgba(156,39,176,0.76234243697479) 100%);
+}
+
+.county-blue{
+  	background: rgb(156,39,176);
+}
+
+.gradient-custom {
+  	background:#fff ; 
+    color:#000; 
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: #dadada;
+}
+
+.banner-full-width-gradient h2 { margin-bottom: 0; }
+
+.banner-full-width-gradient h2:after { content: normal; }
+
+.banner-full-width-gradient .btn { margin-top: 10px; margin-right: 15px; }
+.banner-full-width-gradient .btn:last-child { margin-right:0; }
+
+
+
+@media (max-width: 600px) {
+  section.banner-full-width-gradient.spacing { 
+    padding: 0 0 30px 0;
+  }
+
+  section.banner-full-width-gradient.mobile-position-Left {
+    background-position-x: 0%;
+    }
+
+  section.banner-full-width-gradient.mobile-position-LeftCenter {
+    background-position-x: 25%;
+    }
+
+    section.banner-full-width-gradient.mobile-position-RightCenter {
+    background-position-x: 75%;
+    }
+
+    section.banner-full-width-grandient.mobile-position-Right {
+    background-position-x: 100%;
+    }
+	
+    .banner-text {
+    display: none;
+    }
+	
+	.banner-full-width-gradient h2 {
+	font-size: 50px;
+	line-height: 1em;
+      padding-top:30px;
+	}
+  
+    .banner-full-width-gradient {
+    clip-path:none;
+	}
+	
+	.banner-full-width-gradient p {
+	font-size: 1em;
+	}
+  
+	
+}

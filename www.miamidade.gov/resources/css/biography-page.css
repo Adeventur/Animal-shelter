@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&amp;display=swap');
+
+.container--small a {
+    color: #857300;
+}
+
+.container--small i.circle-icon,
+.container--small i.circle-icon:hover,
+.container--small i.circle-icon:focus {
+	background-color: #857300;
+}
+
+.bio__header {
+	display: flex;
+}
+
+.bio__header__name-container {
+	display: flex;
+	align-self: center;
+}
+
+.bio__header__image {
+	width: 200px; height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+
+	border: 5px solid #9f8900;
+}
+
+.bio__header__h-tag {
+	margin: 1.5rem 0;
+	padding-bottom: 0; /*--overriding global styles-- */
+}
+
+.bio__header__name,
+.bio__header__title {
+	display: block;
+}
+
+.bio__header__name {
+	font-family: Roboto;
+    font-weight: bold;
+
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
+}
+
+.bio__header__title {
+	font-family: "Open Sans";
+    font-size: 1.4rem;
+}
+
+.bio__organization {
+	border-top: 1px dotted #333;
+}
+
+@media (min-width:768px) {
+	.bio__header {
+		gap: 2rem;
+	}
+
+	.bio__header__image {
+		margin-bottom: 1.5rem;
+	}
+}
+
+@media (max-width:767px) {
+	.bio__header {
+		flex-direction: column;
+	}
+
+	.bio__header__image-container {
+		display: flex;
+		justify-content: center;
+	}
+
+	.bio__header__name-container {
+		text-align: center;
+	}
+}
+
+@media (min-width:1200px) {
+  .container--small { max-width:800px; }
+}

@@ -1,0 +1,206 @@
+
+/**
+ * Print Stylesheet fuer Miamidade.gov
+* @version         1.0
+* @lastmodified    02.11.2019
+*/
+
+
+	@media print {
+
+
+
+		 * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+		
+ 		a, a:visited { text-decoration: underline; font-size: 14px; }
+  		a[href]::after { content: " (" attr(href) ")"; }
+  		abbr[title]::after { content: " (" attr(title) ")"; }
+  		.ir a::after, a[href^="javascript:"]::after, a[href^="#"]::after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  		pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+	  	thead { display: table-header-group; } /* h5bp.com/t */
+	  	tr, img { page-break-inside: avoid!important; }
+	  	img {display:none!important; }
+	  	@page { margin: 2cm; }
+	  	p, h2, h3 { orphans: 3; widows: 3; }
+/*		h2, h3 { page-break-before: always;}*/
+		p,
+		a,
+		.main-results,
+		.search,
+		.secondary-filters,
+		.mobile-filter,
+		.hide-item,
+		.mdc-search-title{page-break-inside: avoid!important;}
+		
+		
+		body {
+			font: 13px;
+			line-height: 1.3;
+			background: #fff !important;
+			color: #000;
+		}
+		
+/*		p { page-break-inside: avoid!important}
+		a { page-break-inside: avoid!important}*/
+
+		h1 {
+			font-size: 18pt!important;
+		}
+		
+		#non-tab-circles > .circle-wrapper > .inline-block-items-three {
+			margin-bottom:0!important; 
+		}
+			
+		.global-header-container {
+			display:none;
+		}
+		
+		section.banner-full-width.spacing,
+		.right-content h2 {
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+		
+		.global-site-banner,
+		.skiptranslate {
+			display: none !important;
+		}
+		
+		h2.sub-titles {
+			font-size: 1.5rem!important;
+/*			margin-top: 15px;*/
+		}
+		
+		.sub-titles:after{
+			display: none!important;
+			margin: 0px;
+			
+		}
+		
+		.video-container{
+			display: none;
+		}
+		
+		
+		#watch-videos {
+			display: none;
+		}
+		
+		
+		.image-container{
+			display: none!important;
+		}
+		
+		.right-content__container {
+			margin-bottom:0px!important;
+		}
+		
+		.right-content h2 {
+			border-bottom: none;
+		}
+		
+		.right-content h2:after{
+			display: none;
+		}
+
+		
+		#twitterFeed{
+			display: none;
+		}
+		
+		.twitter-feed{
+			display: none;
+		}
+		
+		#page-navigation {
+			display:none;
+		}
+		
+		.banner-initiatives{
+			display: none;
+		}
+		
+		.banner-initiatives-action-container{
+			display: none;
+		}
+	
+		.site-footer-container {
+			display: none;
+		}
+		
+		#ls-row-1-area-1 {
+			display:none;
+		}
+		
+		.card{
+			box-shadow: none;
+		}
+		
+		section.banner-full-width.spacing{
+			padding: 0;
+		}
+		
+		.QSISlider {
+			display: none;
+		}
+		
+		.hide-on-med-and-up {
+			display: none !important;
+		}
+		
+		.accordion .accordion-content {
+   	 		color: inherit!important;
+    		display: block!important;
+    		max-height: 100%!important;
+    		opacity: 1!important;
+    		transform: none!important;
+		}
+
+		.accordion .flipIn, .accordion li {
+			animation: none !important;
+		}
+		
+		.template-site-banner-container section {
+			display: none;
+		}
+		
+		.search{
+			display: none!important;
+		}
+		
+		.search-filters{
+			display:none!important;
+		}
+		
+		.secondary-filters{
+			display: none!important;
+		}
+		
+		.template-right-content-container{
+		   display:none!important;
+		}
+		
+		.secondary-filters__select {
+			display: none!important;
+		}		
+		
+		.secondary-filters__sort {
+			display: none!important;
+		}
+		
+		#topOfIndex{
+			display: none!important;
+		}
+		
+		.main-results,
+		.search,
+		.secondary-filters,
+		.mobile-filter,
+		.hide-item{
+			display: none !important;
+		}
+
+
+		
+
+	}

@@ -1,0 +1,513 @@
+/* --------------------------
+SERVICE, LICENSE AND PRODUCT PAGES
+-------------------------- */
+
+.mobile-testing-image {
+  margin-top: 1.5rem;
+}
+
+.heading__title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.heading__sub-title,
+.heading__location__item {
+  font-size: 1rem;
+}
+
+.closing {
+  color: #ff3332;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.heading__location {
+  padding-bottom: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 20px;
+  border-bottom: 5px solid #46BCEB;
+  display: flex;
+  align-items: center;
+}
+
+.heading__location__item {
+  display: flex;
+  align-items: center;
+}
+
+.heading__location__item:not(:nth-last-child(-n+2)) {
+  margin-right: 2rem;
+}
+
+.heading__location__item:nth-last-child(2){
+  margin-right: 1rem;
+}
+
+.separator{
+  margin: 0 1rem;
+}
+
+.heading__location__item > div {
+  align-self: center;
+}
+
+.heading__location__circle{
+  width: 40px;
+  height: 40px;
+  background-color: #46BCEB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-indent: -9999px;
+  margin-right: 0.5rem;
+}
+
+.heading__location__image {
+  overflow: initial;
+  max-width: 50%;
+  margin: auto;
+}
+
+.heading__location-entrance {
+  font-size: 1rem;
+}
+
+.appointment {
+  font-size: 1rem;
+}
+
+.schedule-appointment > .btn:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.heading,
+.general-page__title,
+.service-page__title,
+.product-page__title,
+.permit-page__title,
+.license-page__title,
+.department-page__title,
+.search-title,
+.all-news h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-top: 1.5rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* Not sure why this was needed
+.service-page__title,
+.product-page__title,
+.permit-page__title,
+.license-page__title,
+.department-page__title,
+.search-title,
+.all-news h1 {
+    margin: 30px 0 20px 0;
+}
+*/
+
+.department-page__title { margin-bottom: 25px; }
+
+.service-page__subTitle,
+.product-page__subTitle,
+.permit-page__subTitle,
+.license-page__subTitle {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.channel-container, .channel-container.small {
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.longDescription ul { margin-left: 20px; }
+
+.longDescription ul li {
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+
+.channel-container.small > ul > li{
+  padding-right: 30px;
+  width: 95px;
+}
+
+.channel-container.small .icon {
+  margin: 5px auto;
+
+  height: 30px;
+  width: 30px;
+  float: inherit;
+}
+
+.channel-container.small .icon .fa {
+  height: 30px;
+  width: 30px;
+}
+
+.channel-container .icon + span {
+  display: block;
+  text-align: center;
+}
+
+.channel-container.small .dropdown-menu {
+  top: 110%;
+  left: -15%;
+}
+
+.department-page__mission-statement {
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 1px dashed #AAA;
+    margin-bottom: 20px; 
+    padding-bottom: 15px;
+}
+
+.department-page__mission-statement p { margin: 0; }
+
+
+.department-page__banner-image {
+    margin: 15px 0;
+    height: auto;
+    max-height: 250px;
+}
+
+
+.right-content__container {
+    margin-bottom: 60px;
+}
+
+.right-content__container.twitter {
+    padding-top: 25px;
+}
+
+/*---Audience Results---*/
+
+.audience-results {
+    background-color: #607d8b;
+    position: relative;
+    padding: 15px 35px!important;
+}
+
+.audience-results h5 a {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.audience-results li {
+    display: inline-block;
+    color: #fff;
+    margin: 0 0 15px 0;
+    width: 48%;
+    vertical-align: top;
+    padding: 0 15px;
+}
+
+/*---/Audience Results---*/
+
+/* --------------------------
+TABS
+-------------------------- */
+.service-record__container.tab-container { min-height: 100px; }
+
+.service-record__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 35px 0 20px 0;
+}
+
+.service-record__container .service-record__title__short h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.service-record__container .service-record__title__short > div {
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+
+/* --------------------------
+RIGHT CONTENT
+-------------------------- */
+
+.right-content { padding-top: 15px !important; }
+
+.organization-content .right-content { padding-top: 0 !important; }
+
+.right-content h2,
+.right__title {
+    font-size: 1.21em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 17px;
+    border-bottom: solid 1px #ddd;
+    position: relative;
+    margin:0 0 20px 0;
+}
+
+.right-content h2:after,
+.right__title:after {
+    content: " ";
+    display: block;
+    height: 3px;
+    width: 42px;
+    position: absolute;
+    bottom: -2px;
+    z-index: 2;
+
+    background-color: #46BCEB;
+}
+
+.right-content h2 .fa {
+    width: 35px;
+    height: 35px;
+    line-height: 37px;
+    font-size: 0.8rem;
+    margin-right: 10px;
+}
+
+.right-content h3 {
+	font-size: 1.18rem;
+    font-weight: 700;
+}
+
+.right-content h4, .right-content h5, .right-content h6 {
+	font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.right-content .right-content-container { margin-bottom: 60px; }
+
+.right-content .accordion .accordion-content {
+    margin-bottom: 1em;
+}
+
+.customer-service-right {
+    padding-left: 0;
+    margin-top: 25px;
+}
+
+ul.customer-service-right > li {
+    display: inline-block;
+    width: 49%;
+    line-height: 1.8;
+}
+
+.customer-service-right > li:before{
+    display: none;
+}
+
+.rightContent-channels{
+    margin-top: 1.42em;
+    font-size: 12px;
+}
+
+.rightContent-channels > div > div {
+    line-height: 3.0;
+    margin-bottom: 1.42em;
+}
+
+.rightContent-channels .icon-circle{
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 0.3em 0.5em 0 0;
+    line-height: 1em;
+}
+
+.rightContent-channels .icon-circle .fa{
+    font-size: 12px;
+}
+
+
+.rightContent .departmentName {
+    font-size: 1.28em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.rightContent, .contactRight {
+    margin-bottom: 40px;
+}
+
+.rightContent > a.btn {
+    font-size: 1.07rem;
+    font-weight: 500;
+
+    height: 48px;
+    width: 100%;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rightContent .fee {
+    /*font-size: 2em;*/
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.rightContent hr:last-child {
+    margin-bottom: 0;
+}
+
+.rightContent.fee-container > .row {
+    margin-bottom: 1em;
+}
+
+.rightContent.fee-container h2, .rightContent.license-container h2 {
+    margin-bottom: 25px;
+}
+
+.rightContent.fee-container h4, .rightContent.license-container h4 {
+    font-size: 1em;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.rightContent.fee-container h4 + span{
+    font-size: 1em;
+}
+
+.in-person .in-person__day-time-container {
+    margin: 20px 0;
+}
+
+
+.channel__container {
+    margin-top: 30px;
+}
+
+.channel__content.single-line {
+    margin-top: 8px;
+}
+
+/*---Channels---*/
+
+.channel,
+.right-nav-links {
+    padding: 0 5px;
+}
+
+.channel li,
+.right-nav-links li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.online-options-container { margin: 25px 0 0 0; }
+
+.online-options-container li { margin-bottom: 15px; }
+
+.online-options-container .btn,
+.right__button {
+    text-align: center;
+    width: 100%;
+    height: auto !important;
+    line-height: inherit !important;
+    padding: 10px 25px;
+}
+
+/* .channel.online-options-container li:before ,*/
+.channel.related li:before,
+.right-nav-links li:before {
+    content: '\f138';
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    float: left;
+    margin-right: 10px;
+    color: #46BCEB;
+    line-height: 20px;
+}
+
+.channel .circle-icon {
+    margin-right: 15px;
+}
+
+.circle-icon {
+    background-color: #0288d1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/*---/Channels---*/
+
+.socialMedia .socialChannel {
+    text-indent: -9999px;
+}
+
+.socialMedia .icon-circle {
+    width: 50px;
+    height: 50px;
+    line-height: 2.4;
+}
+
+.socialMedia .socialContainer {
+    float: left;
+    width: 33%;
+}
+
+.in-person__title {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.in-person__day-time-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.current-related-item {
+    padding-left: 15px;
+    border-left: 5px solid #2196f3;
+}
+
+@media (min-width: 601px) {
+    /*
+    .service-record__container .service-record__title__short { min-height: 150px; }
+    */
+}
+
+@media (max-width: 600px) {
+    .audience-results li { width: 100%; }
+
+    .service-record__title { margin-top: 20px; }
+
+    .flex-order-flip {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flex-order-flip > div:first-child {
+      order: 2;
+    }
+
+    .flex-order-flip > div:last-child {
+      order: 1;
+    }
+
+    .right-content.right-content--mobile-no-mt {
+      margin-top: 0;
+    }
+}

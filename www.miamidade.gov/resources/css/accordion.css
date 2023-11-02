@@ -1,0 +1,481 @@
+
+/* --------------------------
+Accordion New
+-------------------------- */
+
+.content__accordion span.content__item__title {
+    font-weight: bold;
+}
+
+
+.mdc-custom__accordion__icon {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+}
+
+.mdc-custom__accordion__icon:before, .mdc-custom__accordion__icon:after {
+  content: "";
+  background-color: #444;
+  transition: all 0.25s ease-in-out;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+
+.content__accordion button[aria-expanded="false"] .mdc-custom__accordion__icon:before {
+  transform: rotate(0deg);
+  width: 6px;
+  height: 18px;
+}
+
+.mdc-custom__accordion__icon:before {
+  transform: rotate(90deg);
+  width: 6px;
+  height: 18px;
+}
+
+.mdc-custom__accordion__icon:after {
+  width: 18px;
+  height: 6px;
+}
+
+.content__accordion .accordion-collapse[aria-hidden="true"]{
+  display:none;
+}
+
+  
+.content__accordion .content__item__title {
+    font-size: 1rem;
+  }
+
+ul.accordion-controls {
+/* margin-top:-30px;  Changed it because of a visual issue on services. Contact ES if you have any questions*/
+}
+  
+.accordion-controls button {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 2em;
+  margin: 0.5em 0em;
+  transition: background-color 0.7s ease-in;  
+  border: 1px solid #d5d3d3;
+  padding: 20px;
+  text-align: left;
+
+  display: flex;
+  justify-content: space-between;
+}
+  
+.content__accordion {
+ list-style-type: none;
+ position: relative;
+}
+
+.content__accordion a{
+text-decoration: underline;
+}
+
+.content__accordion .content__item__title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.accordion-collapse > ul { padding-left: 50px; }
+
+.accordion-collapse > ul > li > ul,
+.accordion-collapse > ul > li > ul > li > ul { padding-left: 30px; }
+
+/*--Right--*/
+.accordion-controls--right {
+  margin-top: 0;
+  overflow: visible;
+}
+
+.accordion-controls--right .content__accordion {
+  margin-top: -6px;
+}
+
+.accordion-controls--right .content__accordion button {
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #d5d3d3;
+
+  padding-left: 5px;
+  padding-right: 30px;
+  margin-top: 5px;
+  margin-bottom: 0;
+
+  position: relative;
+}
+
+.accordion-controls--right .content__accordion button:focus {
+  outline-offset: -4px !important;
+}
+
+.accordion-controls--right .content__accordion h3 {
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.accordion-controls--right .accordion-collapse {
+  padding-top: 10px;
+}
+
+.accordion-controls--right .mdc-custom__accordion__icon {
+  top: 1px;
+  right: 20px;
+  margin-top: 24px;
+}
+
+.accordion-controls--right .content__accordion button[aria-expanded="false"] .mdc-custom__accordion__icon:before {
+  transform: rotate(0deg);
+  right: -8px;
+  width: 4px;
+  height: 12px;
+  top: 0;
+}
+
+.accordion-controls--right .mdc-custom__accordion__icon:before {
+  transform: rotate(90deg);
+  right: -8px;
+  width: 4px;
+  height: 12px;
+  top: 0;
+}
+
+.accordion-controls--right .mdc-custom__accordion__icon:after {
+  top: 4px;
+  width: 12px;
+  height: 4px;
+}
+
+/* --------------------------
+Accordion Old
+-------------------------- */
+
+.accordion .accordion-content, .accordion > li > i:before, .accordion > li > i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+.accordion .flipIn, .accordion li {
+  animation: flipdown 0.5s ease both;
+}
+
+.accordion li > h3,
+.accordion li > .content__item__title {
+   -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  font-size: 1.28em;
+  font-weight: 900;
+  line-height: 34px;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+
+  border:1px solid #d5d3d3;
+  padding: 15px 60px 15px 20px;
+  background: #fff;
+}
+
+.accordion .accordion-content {
+  position: relative;
+  overflow: hidden;
+  max-height: 500000px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin: 20px 20px 0 20px;
+  z-index: 2;
+  display: block;
+}
+
+.accordion .accordion-content > ul { padding-left: 50px; }
+
+.accordion .accordion-content > ul > li > ul,
+.accordion .accordion-content > ul > li > ul > li > ul { padding-left: 30px; }
+
+.accordion {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion-content h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.accordion-content a {
+text-decoration: underline;
+}
+
+.accordion > li {
+  position: relative;
+  padding: 18px 0 4px 0;
+  margin: 0 !important;
+  list-style-type: none !important;
+}
+
+.accordion > li:first-child {
+  padding-top: 0;
+}
+
+.accordion > li:first-child > i {
+  top: 8px;
+}
+
+/*
+.accordion > li:last-of-type {
+  padding-bottom: 0;
+}
+*/
+
+.accordion > li > i {
+  position: absolute;
+  margin-top: 16px;
+
+  right: 45px;
+  top: 27px;
+}
+
+.accordion > li > i:before, .accordion > li > i:after {
+  content: "";
+  position: absolute;
+  background-color: #444;
+}
+
+.accordion > li > i:before {
+  transform: rotate(90deg);
+  right: -12px;
+  width: 6px;
+  height: 18px;
+  top: 0;
+}
+
+.accordion > li > i:after {
+  top: 6px;
+  width: 18px;
+  height: 6px;
+}
+
+.accordion > li li {
+  list-style-type: none !important;
+  margin: 15px 0 !important;
+}
+
+.accordion > li li:before {
+  content: '\f138';
+  font-family: 'FontAwesome';
+  font-size: 18px;
+  float: left;
+  margin: -0.2rem 0.5rem 0 -2rem;
+  color: #444;
+}
+
+.accordion > li  ol li:before {
+  content: none;
+}
+
+.accordion > li  ol li 
+{
+  list-style-type: decimal !important;
+}
+
+/*
+By making the open state default for when :checked isn't detected, we make this accessable for browsers that don't recognize :checked. The fallback is simply an open accordion.
+ */
+.accordion > li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.accordion > li input[type=checkbox]:focus ~ h3 {
+border: 3px dotted #0E9DD0;	
+}
+
+
+.accordion > li input[type=checkbox]:checked ~ .accordion-content {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+  color: #47CEFF;
+  display: none;
+}
+
+.accordion > li input[type=checkbox]:checked ~ i:before {
+  transform: rotate(0deg);
+  right: -12px;
+  width: 6px;
+  height: 18px;
+  top: 0;
+}
+
+.accordion > li input[type=checkbox]:checked ~ i:after {
+  top: 6px;
+  width: 18px;
+  height: 6px;
+}
+
+
+/* --------------------------
+FILTERS LIST
+-------------------------- */
+
+.collapsible-header { position: relative; }
+
+
+.filters-accordion {
+  position: absolute;
+  margin-top: 16px;
+
+  right: 45px;
+  top: 1px;
+}
+
+.filters-accordion:before, .filters-accordion:after {
+  content: "";
+  position: absolute;
+  background-color: #444;
+  transition: all 0.25s ease-in-out;
+}
+
+.filters-accordion:before {
+  transform: rotate(0deg);
+  right: -8px;
+  width: 4px;
+  height: 12px;
+  top: 0;
+}
+
+.active .filters-accordion:before {
+  transform: rotate(90deg);
+  right: -8px;
+  width: 4px;
+  height: 12px;
+  top: 0;
+}
+
+
+.filters-accordion:after {
+  top: 4px;
+  width: 12px;
+  height: 4px;
+}
+
+/* --------------------------
+CONTACT RIGHT
+-------------------------- */
+
+.accordion.contactRight h3 {
+  padding-left: 0;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.accordion.contactRight > li {
+  padding-top: 0px;
+}
+
+.accordion.contactRight > li > i {
+  top: 10px;
+  right: 20px;
+}
+
+
+.accordion.contactRight > li > i:before, .accordion.contactRight > li > i:after {
+
+}
+
+.accordion.contactRight > li input[type=checkbox]:checked ~ i:before {
+  transform: rotate(0deg);
+  right: -8px;
+  width: 4px;
+  height: 12px;
+}
+
+.accordion.contactRight > li input[type=checkbox]:checked ~ i:after {
+  top: 4px;
+
+  width: 12px;
+  height: 4px;
+}
+
+.accordion.contactRight > li > i:before {
+  transform: rotate(90deg);
+  right: -8px;
+  width: 4px;
+  height: 12px;
+}
+
+.accordion.contactRight > li > i:after {
+  top: 4px;
+  width: 12px;
+  height: 4px;
+}
+
+.accordion.contactRight h3, .accordion.contactRight .contactItem {
+  border-width: 0 0 1px 0;
+/*  border-style: solid;*/
+  border-color: #d5d3d3;
+}
+
+.accordion.contactRight > li input[type=checkbox]:checked ~ .accordion-content {
+  margin-top: -20px;
+}
+
+/* --------------------------
+KEYFRAMES
+-------------------------- */
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+} 
+
+@media print{
+	
+	.accordion-content {
+    color: inherit;
+    display: block;
+    max-height: 100%;
+    opacity: 1;
+    transform: none;
+		}
+	
+}
